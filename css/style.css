@@ -1,0 +1,376 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #101010;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+/*font-family: 'Nunito', sans-serif;*/
+body {
+  background-image: url("/image/paper.jpg");
+  color: #101010;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 70vw;
+  margin: auto;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  max-width: 650px;
+}
+
+.background {
+  background-color: rgba(213, 230, 236, 0.3);
+  width: 100%;
+  padding: 4vw;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.header-left img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-right {
+  padding-left: 4vw;
+}
+.header-right h1 {
+  font-weight: 800;
+  font-size: 4.8vw;
+}
+.header-right h2 {
+  font-size: 3vw;
+}
+.header-right p {
+  font-size: 1.9vw;
+}
+.header-right *:not(:first-child) {
+  padding-top: 1.32vw;
+}
+
+.section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-left > * {
+  padding-top: 4vw;
+}
+.section-left > * [class^=text] {
+  text-align: justify;
+}
+
+[class^=title-] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+[class$=headerr] {
+  font-size: 2.5vw;
+  font-weight: 800;
+  padding-bottom: 1vw;
+}
+
+[class$=leftt] {
+  font-weight: 500;
+  font-size: 2vw;
+}
+
+[class$=rightt] {
+  font-weight: 500;
+  font-size: 1.2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+[class^=text] {
+  padding-top: 1vw;
+  font-size: 1.25vw;
+}
+
+.section-right > * {
+  padding-top: 4vw;
+  padding-left: 4vw;
+}
+
+.edu-1, .edu-3 {
+  font-weight: 800;
+}
+
+.right-languages > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.edu-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer {
+  font-size: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3vw;
+}
+
+/* Исправления */
+.title-1 {
+  padding-top: 1vw;
+}
+
+/* Исправления */
+/* Медиа запросы */
+@media (max-width: 500px) {
+  .container {
+    width: 90vw;
+  }
+
+  .header {
+    display: block;
+    text-align: center;
+  }
+  .header .header-right {
+    padding: 6vw 0px;
+  }
+  .header h1 {
+    font-size: 10vw;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+  }
+  .header h2 {
+    font-size: 7.25vw;
+    padding-bottom: 3.82vw;
+  }
+  .header p {
+    font-size: 4.25vw;
+    padding-bottom: 2.5vw;
+  }
+
+  .section {
+    display: block;
+    text-align: center;
+  }
+  .section [class^=text] {
+    padding-top: 2.5vw;
+    font-size: 3.5vw;
+  }
+  .section [class$=headerr] {
+    font-size: 6.5vw;
+    padding-bottom: 4vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section [class$=leftt] {
+    font-weight: 600;
+    font-size: 4vw;
+  }
+  .section [class$=rightt] {
+    font-size: 3vw;
+    font-weight: 500;
+  }
+  .section .section-right > * {
+    padding-top: 10vw;
+    padding-left: 0;
+  }
+  .section-left {
+    text-align: justify;
+  }
+  .section .work-headerr {
+    text-align: center;
+  }
+  .section .edu-block {
+    display: block;
+  }
+
+  .footer {
+    font-size: 4vw;
+  }
+}
+@media (max-width: 380px) {
+  .footer {
+    display: block;
+    text-align: center;
+  }
+  .footer .email {
+    padding-top: 2vw;
+  }
+}
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+@media (min-width: 930px) {
+  container {
+    width: 651px;
+    padding-top: 27.9px;
+    padding-bottom: 27.9px;
+  }
+
+  .background {
+    padding: 37.2px;
+  }
+
+  .header-right {
+    padding-left: 37.2px;
+  }
+  .header-right h1 {
+    font-size: 44.64px;
+  }
+  .header-right h2 {
+    font-size: 27.9px;
+  }
+  .header-right p {
+    font-size: 17.67px;
+  }
+  .header-right *:not(:first-child) {
+    padding-top: 12.276px;
+  }
+
+  .section-left > * {
+    padding-top: 37.2px;
+  }
+
+  [class$=headerr] {
+    font-size: 23.25px;
+    padding-bottom: 9.3px;
+  }
+
+  [class$=leftt] {
+    font-size: 18.6px;
+  }
+
+  [class$=rightt] {
+    font-weight: 500;
+    font-size: 11.16px;
+  }
+
+  [class^=text] {
+    padding-top: 9.3px;
+    font-size: 11.625px;
+  }
+
+  .section-right > * {
+    padding-top: 37.2px;
+    padding-left: 37.2px;
+  }
+
+  .footer {
+    font-size: 18.6px;
+    margin-top: 27.9px;
+  }
+
+  .title-1 {
+    padding-top: 9.3px;
+  }
+}
+@media (max-width: 650px) and (min-width: 380px) {
+  .container {
+    width: 85vw;
+  }
+}
