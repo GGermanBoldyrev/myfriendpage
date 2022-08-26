@@ -288,7 +288,7 @@ body {
     font-size: 4vw;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .footer {
     display: block;
     text-align: center;
@@ -369,7 +369,7 @@ body {
     padding-top: 13.95px;
   }
 }
-@media (max-width: 650px) and (min-width: 380px) {
+@media (max-width: 650px) and (min-width: 400px) {
   .container {
     width: 85vw;
   }
